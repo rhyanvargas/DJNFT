@@ -26,7 +26,7 @@ contract MyEpicNFT is ERC721URIStorage{
     _safeMint(msg.sender, newTokenId);
 
     // Set NFT data
-    _setTokenURI(newTokenId, "https://jsonkeeper.com/b/2O6I");
+    _setTokenURI(newTokenId, "https://raw.githubusercontent.com/rhyanvargas/turntable-nft-draft/main/metadata/turntable.json");
 
     // Increment NFT count for the next NFT
     _tokenIds.increment();
