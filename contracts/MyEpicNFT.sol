@@ -13,7 +13,7 @@ contract MyEpicNFT is ERC721URIStorage{
   Counters.Counter private _tokenIds;
 
   // Pass name of token and it's symbol 
-  constructor() ERC721 ("TurntableNFT", "DECKS"){
+  constructor() ERC721 ("DJNFT", "DJNFT"){
       console.log('This is my new contract!');
   }
 
