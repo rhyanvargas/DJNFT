@@ -15,13 +15,7 @@ const main = async () => {
   let txn = await nftContract.mintNFT();
   // Wait for minting to complete...
   await txn.wait();
-  console.log('NFT #1 Minted...')
-
-  // Call 2nd minting function
-   txn = await nftContract.mintNFT();
-  //  Wait for minting to complete...
-   await txn.wait();
-   console.log('NFT #2 Minted...')
+  console.log('NFT Minted...')
 
 };
 
