@@ -50,6 +50,8 @@ contract MyEpicNFT is ERC721URIStorage{
     "fruity loops"
   ];
 
+  event NewEpicNftMinted(address sender, uint256 tokenId);
+
 
   // Pass name of token and it's symbol 
   constructor() ERC721 ("DJNFT", "DJNFT"){
@@ -137,6 +139,8 @@ contract MyEpicNFT is ERC721URIStorage{
     _tokenIds.increment();
 
     console.log("An NFT w/ ID %s has been minted to %s", newTokenId, msg.sender);
+
+    emit NewEpicNftMinted(msg.sender, newTokenId);
 
   }
 }

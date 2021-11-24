@@ -1,15 +1,31 @@
-# Basic Sample Hardhat Project
+# Basic NFT - DJNFT
+*Hardhat // Solidity // React* 
 
-This project demonstrates a basic Hardhat use case. It comes with a sample contract, a test for that contract, a sample script that deploys that contract, and an example of a task implementation, which simply lists the available accounts.
+**View site here: https://nft-starter-project.rhyanvargas.repl.co/**
+===
+
+This project demonstrates a basic NFT `ERC721` token contract, and script that deploys that contract.
 
 Try running some of the following tasks:
+### Install Dependencies
+`npm install`
 
+### Add environment variables
+```
+RINKEBY_KEY={YOUR_KEY_HERE}
+ALCHEMY_URL_KEY=https://eth-rinkeby.alchemyapi.io/v2/{YOUR_KEY_HERE}
+```
+### Run Contract Locally
+`npx hardhat run scripts/run.js`
+
+### Deploy Contract to Rinkeby Testnet
+`npx hardhat run scripts/deploy.js --network rinkeby`
+
+## TODO
+[ ] Create `_totalSupply` so that there is a limited supply  
+[ ] Add `totalMinted` so that user can see how many has been minted  
+[ ] Add dynamic background color change to NFT svg
+[ ] Verify a contract using this terminal command
 ```shell
-npx hardhat accounts
-npx hardhat compile
-npx hardhat clean
-npx hardhat test
-npx hardhat node
-node scripts/sample-script.js
-npx hardhat help
+npx hardhat verify {CONTRACT_ADDRESS} --network _totalSupply`
 ```
